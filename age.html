@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Modern Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <i class="fas fa-calendar-alt icon"></i>
+                <h1>Age Calculator</h1>
+                <p>Calculate your exact age with precision</p>
+            </div>
+            
+            <form class="form" id="ageForm">
+                <div class="input-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <div class="input-wrapper">
+                        <input type="date" id="birthdate" required>
+                        <i class="fas fa-birthday-cake input-icon"></i>
+                    </div>
+                </div>
+                
+                <button type="submit" class="calculate-btn">
+                    <span>Calculate Age</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+            
+            <div class="result" id="result">
+                <div class="result-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Your Age</h2>
+                </div>
+                
+                <div class="age-display">
+                    <div class="age-item years">
+                        <div class="number" id="years">0</div>
+                        <div class="label">Years</div>
+                    </div>
+                    <div class="age-item months">
+                        <div class="number" id="months">0</div>
+                        <div class="label">Months</div>
+                    </div>
+                    <div class="age-item days">
+                        <div class="number" id="days">0</div>
+                        <div class="label">Days</div>
+                    </div>
+                </div>
+                
+                <div class="additional-info">
+                    <div class="info-item">
+                        <span class="info-label">Total Days:</span>
+                        <span class="info-value" id="totalDays">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Total Hours:</span>
+                        <span class="info-value" id="totalHours">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Total Minutes:</span>
+                        <span class="info-value" id="totalMinutes">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Developed by Owais Sayyed</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
